@@ -45,7 +45,7 @@ def get_chatgpt_completion(
         "Authorization": f"Bearer {config.api_key}"
     }
     data = {
-        "model": config.model,
+        "model": 'gpt-4',
         "messages": (
             [{"role": "user", "content": prompt}]
             if isinstance(prompt, str) else
